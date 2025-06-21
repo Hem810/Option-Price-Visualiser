@@ -74,7 +74,7 @@ with tab1:     # Pricing Models
     )
     st.plotly_chart(fig, use_container_width=True)
 
-with tab2:  # Greeks Calculator
+with tab2:  
     st.header("Option Greeks Analysis")
     
     bs = B.BlackScholes(S, K, T, r, sigma, q)
@@ -106,7 +106,7 @@ with tab2:  # Greeks Calculator
     fig = px.line(x=x, y=y, labels={'x': param, 'y': 'Delta'})
     st.plotly_chart(fig, use_container_width=True)
 
-with tab3:  # Market Data
+with tab3: 
     st.header("Real Market Data Comparison")
     ticker_s=st.text_input("Enter Ticker Symbol", "AAPL")
     ticker = yf.Ticker("AAPL") 
@@ -128,7 +128,6 @@ with tab3:  # Market Data
             if option_type == "Call" else
             B.BlackScholes(S, row['strike'], T, r, sigma, q).put_price(), axis=1)
         
-        # Display comparison
         st.write(f"Spot Price:{S}")
         st.dataframe(options[['strike', 'lastPrice', 'Theoretical', 'impliedVolatility']], 
                     use_container_width=True)
@@ -136,7 +135,7 @@ with tab3:  # Market Data
     except Exception as e:
         st.error(f"Error fetching market data: {str(e)}")
 
-with tab4:  # IV Surface
+with tab4:  
     st.header("Implied Volatility Analysis")
     
     market_price = st.number_input("Market Price", 0.01, 1000.0, bs_price)
@@ -153,7 +152,6 @@ with tab4:  # IV Surface
     with cols[1]:
         st.metric("BS Price with IV", f"${int(B.BlackScholes(S, K, T, r, iv, q).call_price()*100)/100}")
     
-    # IV Surface visualization
     st.subheader("3D IV Surface")
     strikes = np.linspace(S*0.7, S*1.3, 20)
     expiries = np.linspace(0.1, 2.0, 20)
