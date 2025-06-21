@@ -4,17 +4,6 @@ Options Pricing Visualizer
 
 A Python-based web application for visualizing and comparing option pricing models, Greeks, implied volatility, and real market data. Built with Streamlit for interactive data exploration.
 
-Directory Structure:
-.
-option-pricing-visualiser/
-├── main.py
-├── models/
-│   ├── BinomialTree.py
-│   ├── BlackScholes.py
-│   └── ImpliedVolatility.py
-└── plots/
-    └── utility.py
-
 
 Features:
 - Option Pricing Models: Compare the Black-Scholes model with the Binomial Tree model for both European and American options.
@@ -33,6 +22,9 @@ Installation:
    ```
    pip install -r requirements.txt
    ```
+3. To Check Setup:
+   ```
+   python setup
 3. Run the application:
    ```
    streamlit run main.py
