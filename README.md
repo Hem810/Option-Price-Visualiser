@@ -6,13 +6,15 @@ A Python-based web application for visualizing and comparing option pricing mode
 
 Directory Structure:
 .
+option-pricing-visualiser/
 ├── main.py
-├── models
+├── models/
 │   ├── BinomialTree.py
 │   ├── BlackScholes.py
 │   └── ImpliedVolatility.py
-└── plots
+└── plots/
     └── utility.py
+
 
 Features:
 - Option Pricing Models: Compare the Black-Scholes model with the Binomial Tree model for both European and American options.
