@@ -24,7 +24,8 @@ Installation:
    ```
 3. To Check Setup:
    ```
-   python setup
+   python setup_check.py
+   ```
 3. Run the application:
    ```
    streamlit run main.py
