@@ -24,7 +24,7 @@ Features:
 Installation:
 1. Clone the repository:
     ```
-   git clone https://github.com/yourusername/options-pricing-visualizer.git
+   git clone https://github.com/Hem810/option-pricing-visualizer.git
    cd options-pricing-visualizer
    ```
 2. Install dependencies:
