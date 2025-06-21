@@ -23,15 +23,18 @@ Features:
 
 Installation:
 1. Clone the repository:
+    ```
    git clone https://github.com/yourusername/options-pricing-visualizer.git
    cd options-pricing-visualizer
-
+   ```
 2. Install dependencies:
+   ```
    pip install -r requirements.txt
-
+   ```
 3. Run the application:
+   ```
    streamlit run main.py
-
+   ```
 Usage:
 - Model Selection: Choose between Black-Scholes and Binomial Tree models.
 - Option Type & Exercise Style: Select call/put and European/American options.
@@ -42,4 +45,4 @@ Usage:
   - Market Data: Fetch and compare real option chain data.
   - IV Surface: Compute implied volatility and visualize IV surfaces.
 
-License: MIT
+
