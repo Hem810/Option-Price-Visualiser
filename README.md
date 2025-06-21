@@ -1,4 +1,4 @@
-# Option-Price-Visualiser
+# Option-Pricing-Visualiser
 Using Black Scholes and Binomial Tree algorithm to determine and show option pricing 
 Options Pricing Visualizer
 
